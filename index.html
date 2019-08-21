@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Parks</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body> 
+   <div class = "container"> 
+    <h1>
+      Park Finder
+    </h1>
+      <form id="parkForm">
+        <label for="searchParks">Search parks by state abbrevation (tx,la,ia)
+        </label>
+        <input type="text" name="searchForParks"
+        id="parkSearch" required>
+
+        <label for="maxParkResults">Return One to Ten parks</label>
+        <input type="number" name="max-results"
+        id="maxResults" value="10">
+
+        <input type="submit" value="Search">
+      </form>
+
+      <p id="printErrorMessage"> </p>
+      <section id="results" class="hidden">
+        <h2> Parks Found </h2>
+        <ul id="resultsList">
+        </ul>
+      </section>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
